@@ -1,0 +1,26 @@
+<?php
+/**
+ * Default theme options.
+ *
+ * @package Newsbulk
+ */
+
+if (!function_exists('newsbulk_get_default_theme_options')):
+
+/**
+ * Get default theme options
+ *
+ * @since 1.0.0
+ *
+ * @return array Default theme options.
+ */
+function newsbulk_get_default_theme_options() {
+
+    $defaults = array();
+
+    $defaults['select_recent_news_category'] = 0;
+
+	return $defaults;
+
+}
+endif;

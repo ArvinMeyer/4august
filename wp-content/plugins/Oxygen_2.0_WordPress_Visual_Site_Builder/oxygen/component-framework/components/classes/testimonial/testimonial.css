@@ -1,0 +1,33 @@
+.oxy-testimonial {
+  display: flex;
+  width: 100%;
+}
+
+.oxy-testimonial .oxy-testimonial-photo-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.oxy-testimonial .oxy-testimonial-photo {
+	border-radius: 50%;
+}
+
+.oxy-testimonial .oxy-testimonial-content-wrap {
+	display: flex;
+	flex-direction: column;
+	order: 2;
+}
+
+.oxy-testimonial .oxy-testimonial-author-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.oxy-testimonial .oxy-testimonial-author {
+	display: flex;
+}
+
+.oxy-testimonial .oxy-testimonial-author-info {
+	display: flex;
+}
+

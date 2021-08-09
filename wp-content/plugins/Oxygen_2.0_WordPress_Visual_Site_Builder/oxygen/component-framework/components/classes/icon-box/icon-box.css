@@ -1,0 +1,27 @@
+.oxy-icon-box {
+  display: flex;
+}
+
+.oxy-icon-box-icon {
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.oxy-icon-box-content {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.oxy-icon-box-heading {
+  margin: 0;
+}
+
+.oxy-icon-box-text {
+  margin: 0;
+}
+
+.oxy-icon-box {
+  align-items: flex-start;
+}
+

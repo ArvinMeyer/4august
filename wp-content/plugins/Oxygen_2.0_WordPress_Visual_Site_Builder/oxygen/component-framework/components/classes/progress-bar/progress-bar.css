@@ -1,0 +1,60 @@
+@keyframes oxy_progress_bar_width {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@keyframes oxy_progress_bar_stripes {
+  from {
+    background-position: 44px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.oxy-progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.oxy-progress-bar-background {
+  background-color: lightgrey;
+  background-position: top left;
+  background-attachment: fixed;
+  background-size: 44px 44px;
+  width: 100%;
+}
+
+.oxy-progress-bar-progress {
+  padding: 20px;
+  display: flex;
+  background-color: darkgrey;
+  background-position: top left;
+  background-attachment: fixed;
+  background-size: 44px 44px;
+  align-items: center;
+}
+
+.oxy-progress-bar-overlay-percent {
+  margin-left: auto;
+  padding-left: 1em;
+}
+
+.oxy-progress-bar-overlay-text {
+  line-height: 1;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.oxy-progress-bar-overlay-percent {
+  white-space: nowrap;
+  line-height: 1;
+  color: #fff;
+  font-size: .8em;
+}
+
+.oxy-progress-bar-overlay-percent:empty {
+  display: none;
+}

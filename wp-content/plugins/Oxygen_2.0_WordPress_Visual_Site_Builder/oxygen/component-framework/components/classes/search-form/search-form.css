@@ -1,0 +1,17 @@
+.oxy-search-form input {
+	padding: 0.5em;
+	border-radius: 0px;
+	border: 1px solid black;
+}
+
+.oxy-search-form input[type=submit] {
+	padding: calc(0.5em + 1px) 1em;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	border: none;
+}
+
+.oxy-search-form label.screen-reader-text {
+	display: none;
+}

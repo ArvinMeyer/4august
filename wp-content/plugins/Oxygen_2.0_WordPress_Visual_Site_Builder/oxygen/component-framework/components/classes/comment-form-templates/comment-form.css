@@ -1,0 +1,35 @@
+.oxy-comment-form .comment-reply-title {
+  margin-bottom: 0.5em;
+}
+
+.oxy-comment-form .logged-in-as {
+  margin-bottom: 1em;
+  font-size: .75em;
+}
+
+.oxy-comment-form #submit {
+  padding: 1em 2em;
+  background-color: transparent;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: .5em;
+  border: none;
+  font-weight: bold;
+}
+.oxy-comment-form input, .oxy-comment-form textarea {
+  padding: 0.5em;
+  border-radius: 0px;
+  border: 1px solid black;
+  color: gray;
+  width: 100%;
+}
+
+.oxy-comment-form label {
+  font-weight: bold;
+}
+
+.oxy-comment-form .comment-form > p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}

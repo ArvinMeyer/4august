@@ -1,0 +1,412 @@
+html {
+  box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	color: rgba(64,64,64,1);
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.ct-section-inner-wrap {
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
+
+.ct-columns-inner-wrap {
+	/* flex layout */
+	display: -webkit-flex !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+}
+
+.ct-column {
+	float: left !important;
+	word-break: break-word;
+}
+
+
+svg.ct-svg-icon {
+	display: inline-block;
+	width: 1em !important;
+	height: 1em !important;
+	fill: currentColor;
+}
+
+
+div.ct-svg-icon {
+	display: inline-block;
+	box-sizing: content-box;
+	border-radius: 50%;
+	width: auto;
+}
+
+div.ct-svg-icon > svg {
+	width: 1em !important;
+	height: 1em !important;
+	fill: currentColor;
+	display: block;
+}
+
+div.ct-fancy-icon {
+	display: inline-flex;
+	border-radius: 50%;
+}
+
+.ct-fancy-icon > svg {
+	fill: currentColor;
+}
+
+.ct-columns-inner-wrap > .ct-column:first-child {
+    margin-left: 0 !important;
+}
+.ct-columns-inner-wrap > .ct-column:last-child {
+    margin-right: 0 !important;
+}
+
+/* New columns */
+.ct-new-columns > .ct-div-block {
+	padding: 20px;
+}
+
+.ct-video {
+	width: 100%;
+}
+
+.ct-video > .oxygen-vsb-responsive-video-wrapper {
+    position: relative;
+}
+
+.ct-video > .oxygen-vsb-responsive-video-wrapper > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Oxygen Nav Menu */
+.oxy-nav-menu-list {
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+}
+.oxy-nav-menu .oxy-nav-menu-list li.menu-item {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+.oxy-nav-menu .oxy-nav-menu-list li.menu-item a {
+	text-decoration: none;
+	border-style: solid;
+	border-width: 0;
+}
+.oxy-nav-menu .menu-item, 
+.oxy-nav-menu .sub-menu {
+	position: relative;
+}
+.oxy-nav-menu .menu-item .sub-menu {
+	display: none;
+	padding: 0;
+	flex-direction: column;
+	white-space: nowrap;
+}
+.oxy-nav-menu .menu-item .sub-menu {
+	top: 100%;
+}
+.oxy-nav-menu .sub-menu .sub-menu,
+.oxy-nav-menu.oxy-nav-menu-vertical .sub-menu {
+	left: 100%;
+	top: 0px;
+}
+.oxy-nav-menu .menu-item:hover > .sub-menu {
+	display: flex;
+	position: absolute;
+	animation-name: oxy-menu-fadein;
+	animation-duration: 0.25s;
+}
+@keyframes oxy-menu-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.oxy-nav-menu .sub-menu li.menu-item {
+	flex-direction: column;
+}
+
+/* Header Builder Styles */
+.oxy-header-wrapper {
+	position: relative;
+}
+.oxy-header-row {
+	width: 100%;
+	display: block;
+}
+.oxy-header-container {
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.oxy-header-left, .oxy-header-center, .oxy-header-right {
+	display: flex;
+	align-items: center;
+}
+.oxy-header-left {
+	justify-content: flex-start;
+}
+.oxy-header-center {
+	flex-grow: 1;
+	justify-content: center;
+}
+.oxy-header-right {
+	justify-content: flex-end;
+}
+.admin-bar .oxy-sticky-header-active {
+	top: 32px !important;
+}
+@media screen and (max-width: 782px) {
+	.admin-bar .oxy-sticky-header-active {
+		top: 46px !important;
+	}
+}
+
+/* Video Backgrounds */
+.oxy-video-background {
+ 	position: relative;
+ 	z-index: 1;
+}
+.oxy-video-container {
+	display: none;
+}
+.oxy-video-background .oxy-video-container {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+.oxy-video-background .oxy-video-container video {
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+.oxy-video-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* Google Maps */
+.oxy-map {
+}
+.oxy-map iframe {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/* Unslider fix */
+.unslider .unslider-fade ul li.unslider-active{
+    position: relative;
+}
+
+/* Nav Menu */
+.oxy-menu-toggle { /* hide the menu toggle on desktop. We’ll show it when the browser is narrower than the specified width. Clicking the toggle will open the menu. */
+	cursor: pointer;
+	display: none;
+}
+
+/* Here are the styles to use to show the menu when the oxy-nav-menu-open class is applied. */
+.oxy-nav-menu.oxy-nav-menu-open { /* make the menu take up all available space in the browser viewport, etc. */
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow: auto;
+	z-index: 2147483642 !important;
+	background-color: #ffffff;
+}
+
+.oxy-nav-menu.oxy-nav-menu-open > div:last-child { /* the menu container */
+  max-height: 100%;
+  overflow: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;	
+}
+
+.oxy-nav-menu-prevent-overflow { /* this class is toggled on body and html to prevent scrolling when the overlay menu is open */
+  overflow: hidden;
+  height: 100%;
+}
+	
+.oxy-nav-menu.oxy-nav-menu-open .oxy-menu-toggle { /* always display the menu toggle when the menu is open */
+	display: initial;
+}
+.oxy-nav-menu.oxy-nav-menu-open .oxy-nav-menu-list { /* make the menu display vertically when the menu is open */
+	flex-direction: column !important;
+	width: 100%;
+}
+.oxy-nav-menu.oxy-nav-menu-open .oxy-nav-menu-list .menu-item a { /* center the text when the menu is open */
+	text-align: center;
+	border: 0 !important;
+	background-color: transparent !important;
+	justify-content: center;
+}
+.oxy-nav-menu.oxy-nav-menu-open .oxy-nav-menu-hamburger-wrap { /* turn the open/close icon into a close icon, position it top right */
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 1;
+}
+.oxy-nav-menu:not(.oxy-nav-menu-open) .sub-menu {
+	background-color: #ffffff;
+	z-index: 2147483641;
+}
+.oxy-nav-menu.oxy-nav-menu-open .menu-item-has-children > a::after,
+.oxy-nav-menu.oxy-nav-menu-open .menu-item .sub-menu {
+	display: none;
+}
+.oxy-nav-menu.oxy-nav-menu-open.oxy-nav-menu-responsive-dropdowns .menu-item .sub-menu {
+	display: flex;
+	position: static;
+	animation-name: none;
+}
+.oxy-nav-menu.oxy-nav-menu-open > div:last-child {
+	width: 100%;
+}
+.oxy-nav-menu.oxy-nav-menu-open a:not([href]) {
+	display: none;
+}
+
+/* Menu Icons */
+.oxy-nav-menu-hamburger-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.oxy-nav-menu-hamburger {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.oxy-nav-menu-hamburger-line {
+	border-radius: 2px;
+}
+.oxy-nav-menu-open .oxy-nav-menu-hamburger {
+	transform: rotate(45deg);
+}
+.oxy-nav-menu-open .oxy-nav-menu-hamburger .oxy-nav-menu-hamburger-line {
+	display: none;
+}
+.oxy-nav-menu-open .oxy-nav-menu-hamburger .oxy-nav-menu-hamburger-line:first-child {
+	display: initial;
+	position: relative;
+}
+.oxy-nav-menu-open .oxy-nav-menu-hamburger .oxy-nav-menu-hamburger-line:last-child {
+	display: initial;
+	position: relative;
+	transform: rotate(90deg);
+}
+
+/* Menu Dropdomn arrow */
+.oxy-nav-menu .menu-item a {
+	display: flex;
+	align-items: center;
+}
+.oxy-nav-menu.oxy-nav-menu-vertical .menu-item a {
+	flex-direction: row;
+}
+.oxy-nav-menu-dropdowns.oxy-nav-menu-dropdown-arrow .menu-item-has-children > a::after {
+	width: 0.35em;
+	height: 0.35em;
+	margin-left: 0.5em;
+	border-right: 0.1em solid;
+	border-top: 0.1em solid;
+	transform: rotate(135deg);
+	content: "";
+}
+.oxy-nav-menu-dropdowns.oxy-nav-menu-dropdown-arrow.oxy-nav-menu-vertical .menu-item-has-children > a::after, 
+.oxy-nav-menu-dropdowns.oxy-nav-menu-dropdown-arrow .sub-menu .menu-item-has-children > a::after {
+	transform: rotate(45deg);
+}
+
+/* Oxy Social Icons */
+.oxy-social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.oxy-social-icons a {
+	line-height: 1;
+	width: 1em;
+	height: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.oxy-social-icons a svg {
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+/* SoundCloud component */
+.oxy-soundcloud {
+  min-width: 300px;
+  min-height: 120px;
+}
+
+.oxy-soundcloud iframe {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* extremely minimal stock styles for post and comment content */
+.oxy-stock-content-styles .alignleft, .comment-body .alignleft {
+	margin-right: 1em;
+	margin-bottom 1em;
+	float: left;
+}
+
+.oxy-stock-content-styles .alignright, .comment-body .alignright {
+	margin-left: 1em;
+	margin-bottom 1em;
+	float: right;
+}
+
+.oxy-stock-content-styles .aligncenter, .comment-body .aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.oxy-stock-content-styles img, .comment-body img {
+	max-width: 100%;
+}

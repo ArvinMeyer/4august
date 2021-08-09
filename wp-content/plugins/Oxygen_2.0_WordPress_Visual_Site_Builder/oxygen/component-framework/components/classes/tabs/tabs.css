@@ -1,0 +1,17 @@
+/* default styles */
+.oxy-tabs-wrapper {
+  display: flex;
+}
+
+.oxy-tab {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.oxy-tab-content {
+  padding: 20px;
+}
+
+.oxy-tabs-contents-content-hidden {
+  display: none !important;
+}

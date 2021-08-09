@@ -1,0 +1,62 @@
+.oxy-pricing-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.oxy-pricing-box .oxy-pricing-box-section.oxy-pricing-box-graphic {
+  order: 10;
+  display: flex;
+  flex-direction: row;
+}
+
+.oxy-pricing-box-graphic > img {
+  max-width: 100%;
+  display: block;
+}
+
+.oxy-pricing-box .oxy-pricing-box-section.oxy-pricing-box-title {
+  order: 20;
+}
+
+.oxy-pricing-box .oxy-pricing-box-section.oxy-pricing-box-price {
+  order: 30;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.oxy-pricing-box-amount {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.oxy-pricing-box-currency {
+  align-self: flex-start;
+}
+
+.oxy-pricing-box-amount-decimal {
+  align-self: baseline;
+}
+
+.oxy-pricing-box-term {
+  margin-left: .4em;
+}
+
+.oxy-pricing-box-sale-price {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.oxy-pricing-box .oxy-pricing-box-section.oxy-pricing-box-content {
+  order: 40;
+}
+
+.oxy-pricing-box .oxy-pricing-box-section.oxy-pricing-box-cta {
+  order: 60;
+}

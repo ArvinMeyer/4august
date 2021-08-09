@@ -1,0 +1,78 @@
+/* a little margin on the title heading */
+.oxy-comments h3.comments-title {
+  margin-bottom: 1em;
+}
+
+/* no list styles or padding on the ol that contains the list of comments */
+.oxy-comments ol.comments-list, .oxy-comments ol.children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* indent nested comments */
+.oxy-comments ol.children {
+  margin-left: 50px;
+}
+
+
+/* an individual comment */
+.oxy-comments li.comment .comment-body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+}
+
+/* comment content */
+.oxy-comments li.comment .comment-body .comment-content {
+  margin-bottom: 1em;
+}
+
+
+/* comment author */
+.oxy-comments .comment-meta .comment-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.oxy-comments .comment-meta .comment-author .avatar {
+  max-width: 64px;
+  max-height: 64px;
+  margin-right: 0.5em;
+}
+
+.oxy-comments .comment-meta .comment-author span.says::before {
+    content: " "; /* we set display flex, so we need the space or "says" appear next to the author name */
+    white-space: pre;
+}
+
+/* date, etc. */
+.oxy-comments .comment-meta .comment-metadata {
+  font-size: 0.75em;
+  margin-top: 0.75em;
+}
+
+.oxy-comments .comment-meta .edit-link {
+  margin-left: 0.5em;
+}
+
+
+
+/* reply link */
+.oxy-comments .reply {
+  display: flex;
+}
+
+.oxy-comments .reply .comment-reply-link {
+  font-size: .75em;
+}
+
+.oxy-comments .comment-meta {
+  flex-wrap: wrap;
+}
+
+.oxy-comments .comment-awaiting-moderation {
+  flex-basis: 100%;
+}
+

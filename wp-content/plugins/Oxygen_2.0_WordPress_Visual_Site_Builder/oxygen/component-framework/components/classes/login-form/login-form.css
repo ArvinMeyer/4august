@@ -1,0 +1,19 @@
+.oxy-login-form p {
+	display: flex;
+	flex-direction: column;
+}
+
+.oxy-login-form input {
+	padding: 0.5em;
+	border-radius: 0px;
+	border: 1px solid black;
+}
+
+.oxy-login-form input[type=submit] {
+	padding: 1em 2em;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+}

@@ -1,0 +1,53 @@
+/* default styles */
+.oxy-toggle {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.oxy-toggle-content {
+  align-self: stretch;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.oxy-expand-collapse-icon {
+  align-self: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 0.4em;
+  text-align: initial;
+}
+
+/* expand / collapse icon css */
+.oxy-expand-collapse-icon {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: inline-block;
+}
+
+.oxy-expand-collapse-icon::before, .oxy-expand-collapse-icon::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 1em;
+  height: .16em;
+  top: calc( (1em / 2 ) - .08em );
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.03em;
+}
+
+.oxy-expand-collapse-icon::after {
+  transform: rotate(-90deg) scale(0);
+}
+
+.oxy-eci-collapsed.oxy-expand-collapse-icon::after {
+  transform: rotate(-180deg);
+}
+
+.oxy-eci-collapsed.oxy-expand-collapse-icon::before {
+  transform: rotate(-90deg);
+}
